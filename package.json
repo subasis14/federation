@@ -6,7 +6,11 @@
     "start": "npm-run-all --parallel start:host start:remote1 start:remote2",
     "start:host": "npm --prefix ./host start",
     "start:remote1": "npm --prefix ./remote1 start",
-    "start:remote2": "npm --prefix ./remote2 start"
+    "start:remote2": "npm --prefix ./remote2 start",
+    "install:host": "cd host && npm install",
+    "install:remote1": "cd remote1 && npm install",
+    "install:remote2": "cd remote2 && npm install",
+    "install": "npm-run-all --parallel install:host install:remote1 install:remote2"
   },
   "keywords": [],
   "author": "",
