@@ -1,0 +1,18 @@
+{
+  "name": "federation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel start:host start:remote1 start:remote2",
+    "start:host": "npm --prefix ./host start",
+    "start:remote1": "npm --prefix ./remote1 start",
+    "start:remote2": "npm --prefix ./remote2 start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
